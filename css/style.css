@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* khôi phục cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========== những thuộc tính áp dụng chung cho cả web================= */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  line-height: 50px;
+  padding: 0px 16px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  border-radius: 24.5px;
+  background: #171100;
+}
+
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+  /* để lesson luôn cách lề một khoảng */
+}
+
+/* =============header============= */
+.header {
+  background: #fffcf4;
+}
+
+/* viết liền nhau */
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -28px;
+}
+
+header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  font-size: 1.6rem;
+  color: #5f5b53;
+  padding: 8px 21px;
+  /* tăng vùng bấm dùng padding */
+}
+
+.nav a:hover {
+  /* font-weight: 600; */
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+  /* giúp không bị giật phần text xung quanh */
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+/* =======hero========= */
+.hero {
+  padding: 56px 0 65px;
+  background: #fffcf4;
+}
+
+/* hero left */
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  position: relative;
+  width: 48%;
+  /* lấy 570 chia 1170 chiếm bao nhiêu phần ND */
+}
+
+.hero .content-block {
+  width: 52%;
+  /*100 - 48*/
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 680px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .hero-summary {
+  padding: 24px;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  width: 270px;
+  border-radius: 12px;
+  box-shadow: 0px 16px 32px 0px #0000000d;
+  background: #ffffff;
+}
+
+.hero .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero .item + .item {
+  margin-top: 22px;
+}
+
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero-summary .label {
+  font-size: 1.4rem;
+  line-height: 186%;
+  color: #5f5b53;
+}
+
+.hero-summary .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #171100;
+}
+
+/* hero right */
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+
+.hero .desc {
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-top: 22px;
+  color: #5f5b53;
+}
+
+.hero .cta-group {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+
+.hero .watch-video {
+  margin-left: 28px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 07);
+}
+
+.hero .watch-video span {
+  color: #171100;
+  margin-left: 14px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.hero .desc-recent {
+  margin-top: 48px;
+}
+
+.desc-start strong {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.23;
+  margin-right: 15px;
+}
+
+.desc-start strong :nth-child(2) {
+  margin-left: 28px;
+}
+
+.hero .desc-start {
+  margin-top: 8px;
+}
